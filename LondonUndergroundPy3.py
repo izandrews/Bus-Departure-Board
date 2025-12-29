@@ -105,7 +105,7 @@ class LiveTime(object):
 	
 	# * Change this method to implement your own API *
 	def __init__(self, Data):
-		self.Destination =  str(Data['towards'])
+		self.Destination =  str(Data['destinationName'])
 		self.ExptArrival = self.convertUTCtoLocal(str(Data['expectedArrival']))
 		self.DisplayTime = self.GetDisplayTime()
 		self.ID =  str(Data['id'])
